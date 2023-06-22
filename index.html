@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <?php include("head.php"); ?>
+    
+    <meta charset="utf-8">
+    <title>Adriana Diseño y Web</title>
+    <meta name="description" content="Adriana Diseñadora Gráfica y Desarrolladora Web con más de 8 años de experiencia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Diseño grafico y paginas web" name="keywords">
+
+    <!-- Open Graph esto sale cuando se comparte el link en facebook-->
+    <meta name="og:title" content="Adriana Diseño Gráfico y Páginas Web">
+    <meta name="og:description" content="Adriana Diseñadora Gráfica y Desarrolladora Web con más de 8 años de experiencia">
+    <meta name="og:url" content="">
+    <meta name="og:site_name" content="Adriana Diseño y Web">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="<url-imagen>">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Font Awesome -->
+    <link href="lib/font-awesome/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+
+    <link href="bootstrap-5.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet"> -->
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60" >
     <header>
-        <?php include("header.php"); ?>
+        
+        <nav id="menu-sup" class="navbar navbar-expand-md navbar-dark fixed-top fondo-menu">
+            <div class="container-fluid">
+                <div class="row sobreescribir-fila">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-4 text-left">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menu-principal" id="navbarCollapse">
+                            <ul id="main_nav" class="navbar-nav me-auto mb-2 mb-md-0 ul-principal" data-animation="center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" aria-current="page" href="index.html#quien-soy">¿Quién Soy?</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html#plantillas">Plantillas Gratis
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html#servicios">
+                                  Servicios
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html#portafolio">Portafolio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html#testimonios">Testimonios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html#contactame">Contáctame</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-8 text-right">
+                        <!-- iconos redes -->
+                        <div class="d-inline-flex align-items-center">
+                            <a class="blanco pl-2" href="https://walink.co/dac843" target="_blank">
+                                <i class="fab fa-whatsapp" title="Whatsapp"></i>
+                            </a>
+                            <a class="blanco px-2" href="https://www.instagram.com/adrianadisenoyweb/" target="_blank">
+                                <i class="fab fa-instagram" title="Instagram"></i>
+                            </a>
+                            <a class="blanco px-2" href="https://www.facebook.com/adrianadisenoyweb" target="_blank">
+                                <i class="fab fa-facebook-f" title="Facebook"></i>
+                            </a>
+                            <a class="blanco px-2" href="https://www.linkedin.com/in/adrianadisenoyweb/" target="_blank">
+                                <i class="fab fa-linkedin-in" title="Linkedin"></i>
+                            </a>
+                            <a class="blanco px-2" href="https://www.behance.net/adrianadisenoyweb" target="_blank">
+                                <i class="fab fa-behance" title="Behance"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Quien Soy Inicio-->
@@ -53,7 +143,7 @@
                     </p>
 
                     <div class="enlace">
-                        <a href="plantillas.php">
+                        <a href="plantillas.html">
                             ver más
                         </a>
                     </div>
@@ -83,7 +173,7 @@
                         <p><span class="amita negrita">Inversión:</span> desde <span class="amita negrita">75</span> <span class="usd">$USD</span></p>    
                     </div>              
                     <div class="enlace mt-auto">
-                        <a href="identidad-visual.php">más información</a>
+                        <a href="identidad-visual.html">más información</a>
                     </div>
                 </div>
                 <div class="d-flex flex-column pb-xl-4 pb-md-4 pb-sm-4 pb-4 col-lg-4 col-md-4">
@@ -97,7 +187,7 @@
                         <p><span class="amita negrita">Inversión:</span> desde <span class="amita negrita">39</span> <span class="usd">$USD</span></p>                  
                     </div>
                     <div class="enlace mt-auto">
-                        <a href="social-media.php">más información</a>
+                        <a href="social-media.html">más información</a>
                     </div>
                 </div>
                 <div class="d-flex flex-column pb-xl-4 pb-md-4 pb-sm-4 pb-4 col-lg-4 col-md-4">
@@ -111,7 +201,7 @@
                         <p><span class="amita negrita">Inversión:</span> desde <span class="amita negrita">10</span> <span class="usd">$USD</span></p>  
                     </div>                
                     <div class="enlace mt-auto">
-                        <a href="disenos-extras.php">más información</a>
+                        <a href="disenos-extras.html">más información</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +218,7 @@
                         <p><span class="amita negrita">Inversión:</span> <span class="amita negrita">175</span> <span class="usd">$USD</span></p>                  
                     </div>
                     <div class="enlace mt-auto">
-                        <a href="servicios-web.php">más información</a>
+                        <a href="servicios-web.html">más información</a>
                     </div>
                 </div>
                 <div class="d-flex flex-column pb-xl-4 pb-md-4 pb-sm-4 pb-4 col-lg-4 col-md-4">
@@ -142,7 +232,7 @@
                         <p><span class="amita negrita">Inversión:</span> desde <span class="amita negrita">245</span> <span class="usd">$USD</span></p>                  
                     </div>
                     <div class="enlace mt-auto">
-                        <a href="servicios-web.php">más información</a>
+                        <a href="servicios-web.html">más información</a>
                     </div>
                 </div>
                 <div class="d-flex flex-column pb-xl-4 pb-md-4 pb-sm-4 pb-4 col-lg-4 col-md-4">
@@ -157,7 +247,7 @@
                         </p>   
                     </div>
                     <div class="enlace mt-auto">
-                        <a href="servicios-web.php">más información</a>
+                        <a href="servicios-web.html">más información</a>
                     </div>
                 </div>
             </div>
@@ -263,7 +353,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 text-left">
 
-                    <form action="mail/contact.php" method="post" id="contactForm">
+                    <form action="mail/contact.html" method="post" id="contactForm">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input class="form-control" type="text" id="nombre" required="required" data-validation-required-message="por favor ingrese su nombre">
@@ -298,10 +388,52 @@
     </div>
     <!-- Fin Contactame -->
     <footer>
-        <?php include("footer.php"); ?>
+        <!-- Footer Start -->
+    <div class="container-fluid py-lg-5 py-md-4 py-sm-3 py-4 fondo-verde">
+        <div class="container">
+            <div class="row">
+                <p class="m-0 text-center text-white">Diseñado por Adriana Porras</p>
+                <p class="m-0 text-center text-white">Diseño Gráfico y Web</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
     </footer>
 
     <!-- JavaScript Libraries -->
-    <?php include("scripts.php"); ?>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="bootstrap-5.3/js/bootstrap.min.js"></script>    
+
+<script src="js/countUp.umd.js"></script>
+
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="lib/font-awesome/all.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<script>
+  //SCROLL ANIMACION
+  new WOW().init();
+    
+  // Contador de quien soy
+  const o = new countUp.CountUp('ocho', 8);
+  const t = new countUp.CountUp('tres', 3);
+  o.start();
+  t.start();
+</script>
 </body>
 </html>

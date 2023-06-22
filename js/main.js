@@ -71,25 +71,26 @@
 
     // var url = window.location.pathname;
     var url = $(location).attr('pathname');
-    if(url=='/adriana-diseno-y-web/identidad-visual.php'){
+    console.log('url actual:'+url);
+    if(url=='/adriana-diseno-y-web/identidad-visual.html'){
         $('.menu-principal ul li a').removeClass('activo');
-        $("a[href$='index.php#servicios']").addClass('activo');
+        $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/disenos-extras.php'){
+    if(url=='/adriana-diseno-y-web/disenos-extras.html'){
         $('.menu-principal ul li a').removeClass('activo');
-        $("a[href$='index.php#servicios']").addClass('activo');
+        $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/servicios-web.php'){
+    if(url=='/adriana-diseno-y-web/servicios-web.html'){
         $('.menu-principal ul li a').removeClass('activo');
-        $("a[href$='index.php#servicios']").addClass('activo');
+        $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/social-media.php'){
+    if(url=='/adriana-diseno-y-web/social-media.html'){
         $('.menu-principal ul li a').removeClass('activo');
-        $("a[href$='index.php#servicios']").addClass('activo');
+        $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/plantillas.php'){
+    if(url=='/adriana-diseno-y-web/plantillas.html'){
         $('.menu-principal ul li a').removeClass('activo');
-        $("a[href$='index.php#plantillas']").addClass('activo');
+        $("a[href$='index.html#plantillas']").addClass('activo');
     }
 
     // $('body').scrollspy({target: " ", offset: 100});
