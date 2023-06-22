@@ -13,7 +13,7 @@ body{
 }
 h2{
     font-size: 4em;
-    font-family: 'amita';
+    font-family: 'amita', cursive;
     color: var(--main-azul-color);
     padding-bottom: 2%;
 }
@@ -82,7 +82,7 @@ p{
     font-style: italic;
 }
 .amita{
-    font-family: 'amita';
+    font-family: 'amita', cursive;
 }
 .usd{
     font-size: 0.7em;
@@ -100,7 +100,7 @@ p{
 #quien-soy h4{
     font-weight: bold;
     font-size: 4em;
-    font-family: 'amita';
+    font-family: 'amita', cursive;
 }
 #quien-soy h6{
     font-weight: 300;
@@ -210,7 +210,7 @@ div.enlace a:hover {
 #testimonios h3{
     font-style: normal;
     font-size: 2.5em;
-    font-family: 'amita';
+    font-family: 'amita', cursive;
     color: var(--main-azul-color);
 }
 .owl-carousel .owl-item img {
@@ -228,7 +228,7 @@ textarea {
     padding-top: 8% !important;
 }
 .diseno-logos h1{
-    font-family: 'amita';
+    font-family: 'amita', cursive;
     font-size: 3em;
     color: var(--main-azul-color);
     font-style: normal;
@@ -259,7 +259,7 @@ textarea {
     font-weight: 300;
 }
 .titulo-logo-amita{
-    font-family: 'amita';
+    font-family: 'amita', cursive;
     font-size: 1.4em;
     color: var(--main-azul-color);
     font-style: normal;
