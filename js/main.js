@@ -71,28 +71,26 @@
 
     // var url = window.location.pathname;
     var url = $(location).attr('pathname');
-    console.log('url actual:'+url);
-    if(url=='/adriana-diseno-y-web/identidad-visual.html'){
+    // console.log('url actual:'+url);
+    if(url=='/a/identidad-visual.html'){
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/disenos-extras.html'){
+    if(url=='/a/disenos-extras.html'){
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/servicios-web.html'){
+    if(url=='/a/servicios-web.html'){
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/social-media.html'){
+    if(url=='/a/social-media.html'){
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#servicios']").addClass('activo');
     }
-    if(url=='/adriana-diseno-y-web/plantillas.html'){
+    if(url=='/a/plantillas.html'){
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#plantillas']").addClass('activo');
     }
-
-    // $('body').scrollspy({target: " ", offset: 100});
 
 })(jQuery);
