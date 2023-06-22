@@ -1,0 +1,508 @@
+:root {
+  --main-verde-color: #007b88;
+  --main-azul-color: #0d1a9d;
+  --main-rosa-color: #efdbd4;
+  --main-blanco-color: white;
+}
+body{
+    color: var(--main-verde-color);
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    display: block;
+}
+h2{
+    font-size: 4em;
+    font-family: 'amita';
+    color: var(--main-azul-color);
+    padding-bottom: 2%;
+}
+h3{
+    font-style: italic;
+    font-size: 1.5em;
+}
+p{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.1em;
+}
+.sobreescribir-fila{
+    display: contents !important;
+}
+.fondo-menu{
+    background-color: var(--main-verde-color);
+}
+/*inicio animacion menu*/
+.ul-principal a {
+    color: #fff;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 400 !important;
+}
+.ul-principal a:hover{
+    color: white;
+}
+.ul-principal a::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, #ffffff, #14d2e0 , #ffffff);
+  transition: all .4s;
+  left: 50%;
+}
+.ul-principal a:hover::before {
+  width: 100%;
+  left:0;
+}
+.activo{
+    text-align:center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffffff, #14d2e0 , #ffffff);
+    border-image-slice: 1;
+    width:100%;
+}
+#menu-sup .nav-link.active {
+    text-align:center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffffff, #14d2e0 , #ffffff);
+    border-image-slice: 1;
+    width:100%;
+}
+.blanco{
+    color: #ffffff;
+}
+.negrita {
+    font-weight: bold;
+}
+.cursiva-negrita{
+    font-weight: 600;
+    font-style: italic;
+}
+.amita{
+    font-family: 'amita';
+}
+.usd{
+    font-size: 0.7em;
+    font-weight: 400;
+}
+#quien-soy{
+    padding-top: 8% !important;
+}
+#quien-soy h3{
+    font-style: italic;
+    font-size: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+#quien-soy h4{
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'amita';
+}
+#quien-soy h6{
+    font-weight: 300;
+    font-size: 1em;
+}
+div.enlace {
+    display: block;
+    text-align: right;
+}
+div.enlace a {
+    color: #ffffff;
+    background-color: var(--main-azul-color);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+div.enlace a:hover {
+    background-color: var(--main-verde-color);
+}
+#servicios h3{
+    font-style: normal;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    color:  var(--main-azul-color);
+}
+#servicios p{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.1em;
+}
+.icono-servicio{
+    text-align: center;
+    margin: auto;
+}
+.cuatrocientos{
+    font-weight: 400;
+}
+.lottie {
+    height: 150px;
+    width: auto;
+}
+#plantillas, #portafolio, #contactame {
+    background: rgba(239, 219,212, 0.3);
+}
+/*********************PORTAFOLIO*********************/
+#portafolio h6 {
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+  z-index: 2;
+}
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+  z-index: 1;
+}
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 300px;
+}
+.lightbox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.lightbox img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #ffffff;
+}
+/*************************FIN PORTAFOLIO******************************/
+#testimonios h3{
+    font-style: normal;
+    font-size: 2.5em;
+    font-family: 'amita';
+    color: var(--main-azul-color);
+}
+.owl-carousel .owl-item img {
+    width: 80%;
+    display: block;
+}
+textarea {
+    resize: none;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+/******************PAGINA IDENTIDAD VISUAL**********************/
+.diseno-logos{
+    padding-top: 8% !important;
+}
+.diseno-logos h1{
+    font-family: 'amita';
+    font-size: 3em;
+    color: var(--main-azul-color);
+    font-style: normal;
+    padding-bottom: 3%;
+}
+.fondo-rosa{
+    background: rgba(239, 219, 212, 0.2);
+}
+.fondo-verde{
+    background: var(--main-verde-color);
+    font-size: 0.8em;
+}
+.enlace h4{
+    color: var(--main-azul-color);
+    font-size: 1.5em;
+}
+.enlace p{
+    color: var(--main-verde-color);
+    font-size: 15px !important;
+    font-weight: 400;
+    text-align: center;
+}
+.titulo-logo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    color: var(--main-azul-color);
+    font-style: normal;
+    font-weight: 300;
+}
+.titulo-logo-amita{
+    font-family: 'amita';
+    font-size: 1.4em;
+    color: var(--main-azul-color);
+    font-style: normal;
+/*     font-weight: 300; */
+}
+.incluye{
+    font-weight: 500;
+}
+.icono-caracol ul{
+    color: var(--main-verde-color);
+    list-style-image: url('../img/servicios/icono-caracol.png') !important;
+}
+.icono-caracol ul li, .icono-caracol ul p{
+    font-size: 1.1em;
+}
+.usd{
+    font-size: 0.7em;
+}
+.obsequio{
+    font-weight: 400;
+    padding-top: 5px;
+}
+.obsequio img{
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.parrafo-web p {
+    font-size: 1.1em;
+}
+.azul{
+    color: var(--main-azul-color);
+}
+.fondo-empieza-ya{
+    background: url("../img/servicios/2-Logo-Empieza-Ya-Precio.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.enlace-social-media p.frase{
+    color: var(--main-verde-color);
+    font-size: 1.2em !important;
+    font-weight: 300;
+    text-align: center;
+}
+.titulo-plantillas{
+    font-size: 2.2em;
+    color: var(--main-verde-color);
+}
+.enlaces-canva a{
+    color: var(--main-verde-color);
+    font-size: 1.2em !important;
+    font-weight: 400;   
+    text-decoration: none;
+}
+#contactame img {
+        width: 75% !important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn.btn-primary {
+    color: #ffffff;
+    background-color: var(--main-azul-color);
+    border-color: var(--main-azul-color);
+    font-size: 1.1em;
+}
+.btn.btn-primary:hover {
+    background-color: var(--main-verde-color);
+    border-color: var(--main-verde-color);
+}
+.back-to-top {
+    background-color: var(--main-verde-color);
+    border-color: var(--main-verde-color);
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+}
+a.back-to-top:hover {
+    background-color: var(--main-azul-color);
+    border-color: var(--main-azul-color);
+}
+
+/************************* MEDIA QUERY ********************/
+
+@media(max-width: 1200px){
+    #quien-soy, .diseno-logos {
+        padding-top: 10% !important;
+    }
+    h2{
+        font-size: 3em;
+    }
+    #quien-soy h3 {
+        font-size: 1.4em;
+    }
+    p, #servicios p {
+        font-size: 1.1em;
+    }
+    #quien-soy h4 {
+        font-size: 3.5em;
+    }
+    #servicios h3 {
+        font-size: 1.5em;
+    }
+    .ul-principal a {
+        font-size: 0.9em;
+    }
+    .lightbox-gallery div {
+        flex-basis: 200px;
+    }
+    .diseno-logos h3{
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 992px){
+    .sobreescribir-fila {
+        display: inline;
+    }
+    #quien-soy, .diseno-logos {
+        padding-top: 11% !important;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #quien-soy h3 {
+        font-size: 1.3em;
+    }
+    p, #servicios p {
+        font-size: 1.1em;
+    }
+    #quien-soy h4 {
+        font-size: 2.5em;
+    }
+    #servicios h3 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .ul-principal a {
+        font-size: 0.7em;
+    }
+    .lightbox-gallery div {
+        flex-basis: 200px;
+    }
+    .diseno-logos h1 {
+        font-size: 2.5em;
+    }
+}
+@media(max-width: 768px){
+    .sobreescribir-fila {
+        display: inline;
+    }
+    #quien-soy, .diseno-logos {
+        padding-top: 12% !important;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #quien-soy h3 {
+        font-size: 1.3em;
+    }
+    p, #servicios p {
+        font-size: 1.1em;
+    }
+    #quien-soy h4 {
+        font-size: 2.5em;
+    }
+    .ul-principal a {
+        font-size: 0.6em;
+    }
+    #quien-soy img, #plantillas img{
+        width: 70% !important;
+    }
+    .diseno-logos h3 {
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 576px){
+    #quien-soy, .diseno-logos {
+        padding-top: 20% !important;
+    }
+    h2{
+        font-size: 2.3em;
+        text-align: center;
+    }
+    #quien-soy h3 {
+        font-size: 1.3em;
+    }
+    p, #servicios p {
+        font-size: 1.1em;
+    }
+    #quien-soy h4 {
+        font-size: 2em;
+    }
+    #quien-soy h6 {
+        font-size: 0.8em;
+    }
+    .owl-carousel .owl-item img {
+        width: 40%;
+        display: inline;
+    }
+    #testimonios h3 {
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
+    .texto-testimonios{
+        text-align: center;
+    }
+    #quien-soy img, #plantillas img{
+        width: 70% !important;
+    }
+    #testimonios img.yo-testimonio {
+        display: none;
+    }
+    div.enlace a {
+        font-size: 1em;
+    }
+    #portafolio h6 {
+        font-size: 1.1em;
+    }
+    .diseno-logos h1 {
+        font-size: 2em;
+    }
+    .inversion{
+        text-align: right;
+    }
+    .brillo{
+        width: 19px;
+    }
+   .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lightbox > div {
+        margin-bottom: 10px;
+    }
+    .titulo-plantillas {
+        font-size: 1.8em;
+    }
+    .diseno-logos h3 {
+        font-size: 1.3em;
+    }
+}
