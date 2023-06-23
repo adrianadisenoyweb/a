@@ -11,7 +11,6 @@
 //Carrusel testimonios
     $('.testimonial-carousel').owlCarousel({
         autoplay: true,
-        autoplayHoverPause: true,
         smartSpeed: 1500,
         margin: 30,
         dots: true,
