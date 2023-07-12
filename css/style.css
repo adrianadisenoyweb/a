@@ -312,6 +312,9 @@ a.back-to-top:hover {
 .iconos-footer a{
     font-size: 1.2em;
 }
+.imagen-plantilla{
+    width: 80%;
+}
 /************************* MEDIA QUERY ********************/
 
 @media(max-width: 1200px){
