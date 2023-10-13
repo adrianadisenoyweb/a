@@ -29,7 +29,7 @@
     <meta name="og:image" content="<url-imagen>">
 
     <!-- Favicon -->
-    <!-- <link href="img/favicon.ico" rel="icon"> -->
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Font Awesome -->
     <link href="lib/font-awesome/all.min.css" rel="stylesheet">
@@ -53,8 +53,8 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N78KZ5C"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <header>
-      <nav id="menu-sup" class="navbar navbar-expand-md navbar-dark fixed-top fondo-menu">
+    <header> 
+        <nav id="menu-sup" class="navbar navbar-expand-md navbar-dark fixed-top fondo-menu">
             <div class="container-fluid">
                 <div class="row sobreescribir-fila">
                     <div class="text-left">
@@ -66,15 +66,26 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" aria-current="page" href="index.html#quien-soy">¿Quién Soy?</a>
                                 </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="index.html#plantillas">Plantillas Gratis
+                                <div class="dropdown">
+                                  <a class="btn btn-secondary dropdown-toggle menu-plantillas" href="#" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Plantillas
                                   </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="index.html#servicios">
+                                  <div class="dropdown-menu items-plantillas" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item item-redes" href="#">Redes Sociales</a>
+                                    <a class="dropdown-item item-agradecimiento" href="#">Tarjetas de Agradecimiento</a>
+                                  </div>
+                                </div>
+                                <div class="dropdown">
+                                  <a class="btn btn-secondary dropdown-toggle menu-servicios" href="#" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Servicios
                                   </a>
-                                </li>
+                                  <div class="dropdown-menu items-servicios" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="identidad-visual.html">Identidad Visual</a>
+                                    <a class="dropdown-item" href="social-media.html">Redes Sociales</a>
+                                    <a class="dropdown-item" href="disenos-extras.html">Diseños Extras</a>
+                                    <a class="dropdown-item" href="servicios-web.html">Servicios Web</a>
+                                  </div>
+                                </div>
                                 <li class="nav-item">
                                   <a class="nav-link" href="index.html#portafolio">Portafolio</a>
                                 </li>
@@ -90,7 +101,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+      </header>
 
 
 <div class="diseno-logos px-lg-5 px-md-4 px-sm-3 px-3 pb-5 animate__animated animate__slideInLeft">
