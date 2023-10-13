@@ -10,11 +10,12 @@
 
     //submenu plantillas    
     $('.menu-plantillas').click(function() {
-      $('.items-plantillas').addClass('show');
+      $('.items-servicios').hide();
+      $('.items-plantillas').show();
     });
     //cerrar submenu plantillas
     $('.items-plantillas a').click(function() {
-        $('.items-plantillas').removeClass('show'); 
+        $('.items-plantillas').hide(); 
     });
 
     $('.item-redes').click(function() {
@@ -24,16 +25,18 @@
 
     $('.item-agradecimiento').click(function() {
       $('.plantillas-redes-sociales').hide();
-      $('.plantillas-tarjetas-agradecimiento').show()
+      $('.plantillas-tarjetas-agradecimiento').show();
     });
 
     //submenu servicios
     $('.menu-servicios').click(function() {
-      $('.items-servicios').addClass('show');
+      $('.items-plantillas').hide();
+      $('.items-servicios').show();
+
     });
     //cerrar submenu plantillas
     $('.items-servicios a').click(function() {
-        $('.items-servicios').removeClass('show'); 
+        $('.items-servicios').hide(); 
     });
 
     //paginacion plantillas redes sociales
