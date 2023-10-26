@@ -4,6 +4,8 @@
   --main-rosa-color: #efdbd4;
   --main-blanco-color: white;
 }
+
+
 body{
     color: var(--main-verde-color);
     font-size: 20px;
@@ -198,6 +200,24 @@ textarea {
     font-style: normal;
     padding-bottom: 3%;
 }
+
+.accordion-button:not(.collapsed){
+    background-color: var(--main-verde-color);
+    color: var(--main-blanco-color);
+}
+.accordion-button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9em;
+    color: var(--main-blanco-color);
+    font-style: italic;
+    background: var(--main-verde-color);
+}
+.accordion-button.collapsed::after, .accordion-button.collapsed::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after, .accordion-button:not(.collapsed)::before{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    
+}
 .fondo-rosa{
     background: rgba(239, 219, 212, 0.2);
 }
@@ -207,7 +227,7 @@ textarea {
 }
 .disenemos-juntas{
     color: var(--main-verde-color);
-    font-size: 15px !important;
+    font-size: 20px !important;
     font-weight: 400;
     text-align: center;
 }
@@ -247,6 +267,7 @@ textarea {
     padding-right: 5px;
 }
 .parrafo-web p {
+    color: var(--main-verde-color);
     font-size: 1.1em;
 }
 .azul{
