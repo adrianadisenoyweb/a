@@ -4,8 +4,6 @@
   --main-rosa-color: #efdbd4;
   --main-blanco-color: white;
 }
-
-
 body{
     color: var(--main-verde-color);
     font-size: 20px;
@@ -151,7 +149,7 @@ div.enlace a:hover {
     font-weight: 400;
 }
 .lottie {
-    height: 150px;
+    height: 125px;
     width: auto;
 }
 #plantillas, #portafolio, #contactame {
