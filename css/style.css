@@ -13,7 +13,8 @@ body{
 }
 h2{
     font-size: 4em;
-    font-family: 'amita', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
     color: var(--main-azul-color);
     padding-bottom: 2%;
 }
@@ -106,6 +107,7 @@ p{
     font-weight: bold;
     font-size: 4em;
     font-family: 'amita', cursive;
+    color: var(--main-azul-color);
 }
 #quien-soy h6{
     font-weight: 300;
@@ -152,7 +154,7 @@ div.enlace a:hover {
     height: 125px;
     width: auto;
 }
-#plantillas, #portafolio, #contactame {
+#productos-digitales, #portafolio, #contactame {
     background: rgba(239, 219,212, 0.3);
 }
 /*********************PORTAFOLIO*********************/
@@ -174,8 +176,9 @@ div.enlace a:hover {
 #testimonios h3{
     font-style: normal;
     font-size: 2.5em;
-    font-family: 'amita', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     color: var(--main-azul-color);
+    font-style: italic;
 }
 .owl-carousel .owl-item img {
     width: 80%;
@@ -192,7 +195,7 @@ textarea {
     padding-top: 8% !important;
 }
 .diseno-logos h1{
-    font-family: 'amita', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
     color: var(--main-azul-color);
     font-style: normal;
@@ -237,7 +240,7 @@ textarea {
     font-weight: 300;
 }
 .titulo-logo-amita{
-    font-family: 'amita', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4em;
     color: var(--main-azul-color);
     font-style: normal;
@@ -436,7 +439,7 @@ a.back-to-top:hover {
     .ul-principal a {
         font-size: 0.6em;
     }
-    #quien-soy img, #plantillas img{
+    #quien-soy img, #productos-digitales img, #plantillas img{
         width: 70% !important;
     }
     .diseno-logos h3 {
@@ -475,7 +478,7 @@ a.back-to-top:hover {
     .texto-testimonios{
         text-align: center;
     }
-    #quien-soy img, #plantillas img{
+    #quien-soy img, #productos-digitales img, #plantillas img{
         width: 70% !important;
     }
     #testimonios img.yo-testimonio {
