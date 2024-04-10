@@ -1,11 +1,9 @@
 (function ($) {
 
     //marcar menu
-    $('.menu-principal ul li a').click(function() {
-                
+    $('.menu-principal ul li a').click(function() {    
         //cerrar menu movil
         $('.menu-principal').removeClass('show');
-        
     });
 
     //submenu plantillas    
@@ -117,5 +115,121 @@
         $('.menu-principal ul li a').removeClass('activo');
         $("a[href$='index.html#plantillas']").addClass('activo');
     }
+
+    //conóceme
+    $('.mision').hide();
+    $('.vision').hide();
+    $('.valores').hide();
+    $('#proposito').click(function(e) {
+        e.preventDefault();
+        $('.mision').hide();
+        $('.vision').hide();
+        $('.valores').hide();
+        $('#mision').removeClass('pagina-seleccionada');
+        $('#vision').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+        
+        $('.proposito').show();
+        $('#proposito').addClass('pagina-seleccionada');
+    });
+
+    $('#mision').click(function(e) {
+        e.preventDefault();
+        $('.proposito').hide();
+        $('.vision').hide();
+        $('.valores').hide();
+        $('#proposito').removeClass('pagina-seleccionada');
+        $('#vision').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+
+        $('.mision').show();
+        $('#mision').addClass('pagina-seleccionada');
+    });
+
+    $('#vision').click(function(e) {
+        e.preventDefault();
+        $('.proposito').hide();
+        $('.mision').hide();
+        $('.valores').hide();
+        $('#proposito').removeClass('pagina-seleccionada');
+        $('#mision').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+
+        $('.vision').show();
+        $('#vision').addClass('pagina-seleccionada');
+    });
+
+    $('#valores').click(function(e) {
+        e.preventDefault();
+        $('.proposito').hide();
+        $('.mision').hide();
+        $('.vision').hide();
+        $('#proposito').removeClass('pagina-seleccionada');
+        $('#mision').removeClass('pagina-seleccionada');
+        $('#vision').removeClass('pagina-seleccionada');
+
+        $('.valores').show();
+        $('#valores').addClass('pagina-seleccionada');
+    });
+    //Productos digitales
+    $(".carousel").swipe({
+
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      
+          if (direction == 'left') $(this).carousel('next');
+          if (direction == 'right') $(this).carousel('prev');
+      
+        },
+        allowPageScroll:"vertical"
+      
+      });
+
+    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+    const carousel = new bootstrap.Carousel(myCarouselElement, {
+    interval: 3000
+    });
+
+    $('.como-utilizo').hide();
+    $('.preg-frec').hide();
+    $('#proceso-compra').click(function(e) {
+        e.preventDefault();
+        $('.como-utilizo').hide();
+        $('.preg-frec').hide();
+        $('.valores').hide();
+        $('#como-utilizo').removeClass('pagina-seleccionada');
+        $('#preg-frec').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+        
+        $('.proceso-compra').show();
+        $('#proceso-compra').addClass('pagina-seleccionada');
+    });
+
+    $('#como-utilizo').click(function(e) {
+        e.preventDefault();
+        $('.proceso-compra').hide();
+        $('.preg-frec').hide();
+        $('.valores').hide();
+        $('#proceso-compra').removeClass('pagina-seleccionada');
+        $('#preg-frec').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+
+        $('.como-utilizo').show();
+        $('#como-utilizo').addClass('pagina-seleccionada');
+    });
+
+    $('#preg-frec').click(function(e) {
+        e.preventDefault();
+        $('.proceso-compra').hide();
+        $('.como-utilizo').hide();
+        $('.valores').hide();
+        $('#proceso-compra').removeClass('pagina-seleccionada');
+        $('#como-utilizo').removeClass('pagina-seleccionada');
+        $('#valores').removeClass('pagina-seleccionada');
+
+        $('.preg-frec').show();
+        $('#preg-frec').addClass('pagina-seleccionada');
+    });
+
+
 
 })(jQuery);

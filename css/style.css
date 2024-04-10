@@ -36,18 +36,16 @@ p{
 .dropdown-menu, .btn-secondary, .dropdown-menu:hover, .btn-secondary:hover, .dropdown-item:hover{
     background-color: var(--main-verde-color);
     border-color: var(--main-verde-color);
-    color: white;
+    color: var(--main-blanco-color);
 }
 /*inicio animacion menu*/
 .ul-principal a {
-    color: #fff;
+    color: var(--main-blanco-color);
     position: relative;
     font-size: 1.1em;
     font-weight: 400 !important;
 }
-/* .ul-principal a:hover{
-    color: white;
-} */
+
 .ul-principal a::before {
   position: absolute;
   bottom: 0;
@@ -80,6 +78,15 @@ p{
 .blanco{
     color: #ffffff;
 }
+.cursiva{
+    font-style: italic;
+}
+.normal{
+    font-weight: 400;
+}
+.semi-bold{
+    font-weight: 500;
+}
 .negrita {
     font-weight: bold;
 }
@@ -87,14 +94,12 @@ p{
     font-weight: 600;
     font-style: italic;
 }
-.amita{
-    font-family: 'amita', cursive;
-}
 .usd{
     font-size: 0.7em;
     font-weight: 400;
 }
-#quien-soy{
+/**********************QUIEN SOY***********************/
+#quien-soy {
     padding-top: 8% !important;
 }
 #quien-soy h3{
@@ -118,7 +123,7 @@ div.enlace {
     text-align: right;
 }
 div.enlace a {
-    color: #ffffff;
+    color: var(--main-blanco-color);
     background-color: var(--main-azul-color);
     padding: 10px;
     border-radius: 10px;
@@ -129,6 +134,66 @@ div.enlace a {
 div.enlace a:hover {
     background-color: var(--main-verde-color);
 }
+/**********************PRODUCTOS DIGITALES****************/
+.carousel-item{
+    padding: 15px;
+    cursor: -webkit-grabbing;
+     
+     & img{
+       border-radius: 30px;
+       height: 500px;
+       
+       box-shadow: 0px 5px 5px rgba(0,0,0,.21);
+     transition: .25s linear;  
+     }
+     
+     &:hover{
+       & img{
+         transform: translatey(-1%);
+       }
+     }
+   }
+   
+   .carousel-indicators li{
+       display: inline-block;
+       width: 10px;
+       height: 10px;
+       margin: 1px;
+       text-indent: -999px;
+       cursor: pointer;
+       background-color: #000 \9;
+       background-color: rgba(0,0,0,0);
+       border: 1px solid var(--main-azul-color);
+       border-radius: 10px;
+       margin: 2px;
+       position: relative;
+       top: 30px;
+     &.active{
+       background: var(--main-azul-color);
+       
+     }
+   }
+   @media only screen and (max-width: 650px)
+   {
+     .carousel-item img{
+       height: auto;
+     }
+   }
+    .carousel-control-prev{
+     left: -50px;
+     /* margin: 0 -25px; */
+     opacity: 1;
+   }
+
+   .carousel-control-next{
+     right: -50px;
+     /* margin: 0 -25px; */
+     opacity: 1;
+   }
+   .icono-pago{
+    width: 70% !important;
+}
+/******************SERVICIOS*************************/
 #servicios h3{
     font-style: normal;
     font-size: 1.7em;
@@ -172,7 +237,7 @@ div.enlace a:hover {
   cursor: pointer;
   z-index: 1;
 }
-/*************************FIN PORTAFOLIO******************************/
+/******************TESTIMONIOS*********************/
 #testimonios h3{
     font-style: normal;
     font-size: 2.5em;
@@ -190,6 +255,31 @@ textarea {
 .text-danger {
   color: #dc3545 !important;
 }
+/***********************CONOCEME************************/
+.conoceme{
+    padding-top: 8% !important;
+}
+.conoceme h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2em;
+    color: var(--main-azul-color);
+    font-style: normal;
+}
+.nav-tabs{
+    border-bottom: var(--bs-nav-tabs-border-width) solid var(--main-verde-color);
+}
+.nav-link{
+    color: var(--main-verde-color);
+    border-top: var(--bs-nav-tabs-border-width) solid var(--main-verde-color);
+    border-top-left-radius: var(--bs-nav-tabs-border-radius);
+    border-top-right-radius: var(--bs-nav-tabs-border-radius);
+    font-weight: 400;
+}
+.nav-link:hover {
+    cursor: pointer;
+    color:var(--main-blanco-color);
+    background-color: var(--main-verde-color);
+}
 /******************PAGINA IDENTIDAD VISUAL**********************/
 .diseno-logos{
     padding-top: 8% !important;
@@ -201,7 +291,6 @@ textarea {
     font-style: normal;
     padding-bottom: 3%;
 }
-
 .accordion-button:not(.collapsed){
     background-color: var(--main-verde-color);
     color: var(--main-blanco-color);
@@ -220,7 +309,7 @@ textarea {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    
 }
 .fondo-rosa{
-    background: rgba(239, 219, 212, 0.2);
+    background: rgba(239, 219, 212, 0.4);
 }
 .enlace h4{
     color: var(--main-azul-color);
@@ -346,21 +435,28 @@ a.back-to-top:hover {
 .imagen-plantilla{
     width: 80%;
 }
+.enlace-ejemplo {
+    color: var(--main-azul-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
 /************************* PAGINACION *********************/
 .page-link{
     background-color: var(--main-azul-color);
-    color: white;
+    color:var(--main-blanco-color);
 }
 .page-link:hover, .pagina-seleccionada, .page-link:focus {
     background-color: var(--main-verde-color);
-    color: white;
+    color:var(--main-blanco-color);
 }
 
 
 /************************* MEDIA QUERY ********************/
 
 @media(max-width: 1200px){
-    #quien-soy, .diseno-logos {
+    #quien-soy, .diseno-logos, .conoceme {
         padding-top: 10% !important;
     }
     h2{
@@ -391,7 +487,7 @@ a.back-to-top:hover {
     .sobreescribir-fila {
         display: inline;
     }
-    #quien-soy, .diseno-logos {
+    #quien-soy, .diseno-logos , .conoceme{
         padding-top: 11% !important;
     }
     h2{
@@ -421,7 +517,7 @@ a.back-to-top:hover {
     .sobreescribir-fila {
         display: inline;
     }
-    #quien-soy, .diseno-logos {
+    #quien-soy, .diseno-logos, .conoceme{
         padding-top: 12% !important;
     }
     h2{
@@ -439,15 +535,16 @@ a.back-to-top:hover {
     .ul-principal a {
         font-size: 0.6em;
     }
-    #quien-soy img, #productos-digitales img, #plantillas img{
+    #quien-soy img, #productos-digitales img, #plantillas img, .foto{
         width: 70% !important;
     }
     .diseno-logos h3 {
         font-size: 1.1em;
     }
+   
 }
 @media (max-width: 576px){
-    #quien-soy, .diseno-logos {
+    #quien-soy, .diseno-logos, .conoceme{
         padding-top: 20% !important;
     }
     h2{
@@ -516,6 +613,9 @@ a.back-to-top:hover {
     }
     .iconos-footer{
         text-align: center;
+    }
+    .icono-pago{
+        width: 40% !important;
     }
 
 }
