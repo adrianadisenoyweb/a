@@ -46,9 +46,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60" >
+<body data-bs-spy="scroll" data-bs-target="#menu-sup" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
       <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N78KZ5C"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -64,39 +64,25 @@
                         <div class="collapse navbar-collapse menu-principal" id="navbarCollapse">
                             <ul id="main_nav" class="navbar-nav me-auto mb-2 mb-md-0 ul-principal" data-animation="center">
                                 <li class="nav-item">
-                                    <a class="nav-link activo" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                                   </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="conoceme.html">¿Quién Soy?</a>
+                                    <a class="nav-link" aria-current="page" href="#quien-soy">¿Quién Soy?</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="productos-digitales.html">Productos Digitales</a>
-                                </li>
-                                <div class="dropdown">
-                                  <a class="btn btn-secondary dropdown-toggle menu-plantillas" href="#" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Plantillas
-                                  </a>
-                                  <div class="dropdown-menu items-plantillas" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item item-redes" href="plantillas.html">Redes Sociales</a>
-                                    <a class="dropdown-item item-agradecimiento" href="plantillas.html">Tarjetas de Agradecimiento</a>
-                                  </div>
-                                </div>
-                                <div class="dropdown">
-                                  <a class="btn btn-secondary dropdown-toggle menu-servicios" href="#" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Servicios
-                                  </a>
-                                  <div class="dropdown-menu items-servicios" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="identidad-visual.html">Identidad Visual</a>
-                                    <a class="dropdown-item" href="social-media.html">Redes Sociales</a>
-                                    <a class="dropdown-item" href="disenos-extras.html">Diseños Extras</a>
-                                    <a class="dropdown-item" href="servicios-web.html">Servicios Web</a>
-                                  </div>
-                                </div>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="index.html#portafolio">Portafolio</a>
+                                    <a class="nav-link" aria-current="page" href="#productos-digitales">Productos Digitales</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="index.html#testimonios">Testimonios</a>
+                                    <a class="nav-link" aria-current="page" href="#plantillas">Plantillas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#servicios">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#portafolio">Portafolio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#testimonios">Testimonios</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="https://walink.co/dac843">Contáctame</a>
@@ -107,6 +93,10 @@
                 </div>
             </div>
         </nav>
+
+
+
+
       </header>
 
     <!-- Quien Soy Inicio-->
@@ -261,7 +251,7 @@
                                         
                     </div>
                     <div class="enlace mt-auto">
-                        <p><span class="negrita">Inversión:</span> <span class="amita negrita">175</span> <span class="usd">USD</span></p>  
+                        <p><span class="negrita">Inversión:</span> <span class="amita negrita">165</span> <span class="usd">USD</span></p>  
                         <a href="servicios-web.html">más información</a>
                     </div>
                 </div>
@@ -277,7 +267,7 @@
                                         
                     </div>
                     <div class="enlace mt-auto">
-                        <p><span class="negrita">Inversión:</span> desde <span class="amita negrita">265</span> <span class="usd">USD</span></p>  
+                        <p><span class="negrita">Inversión:</span> desde <span class="amita negrita">255</span> <span class="usd">USD</span></p>  
                         <a href="servicios-web.html">más información</a>
                     </div>
                 </div>
@@ -294,7 +284,7 @@
                           
                     </div>
                     <div class="enlace mt-auto">
-                        <p><span class="negrita">Inversión:</span> desde <span class="amita negrita">675</span> <span class="usd">USD</span>
+                        <p><span class="negrita">Inversión:</span> desde <span class="amita negrita">595</span> <span class="usd">USD</span>
                         </p> 
                         <a href="servicios-web.html">más información</a>
                     </div>
@@ -348,64 +338,101 @@
                     <div class="owl-carousel testimonial-carousel">
                         <div class="position-relative">
                             <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-3 col-md-3">
+                                    <img class="img-fluid rounded-circle" src="img/testimonios/1-adri.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 pt-4">
+                                    <h4>Adriana Chirinos</h4>
+                                    <p>@adrianachiris</p>
+                                    <p class="m-0">En otro orden de ideas, enamorada de mi identidad ya la imagino en todo y no te imaginas el cambio q tendrá mi cuenta y estoy agradecida contigo y tu hermosisimo trabajo ahora más que nunca tengo tanto que seguir dando y sobre todo de seguir aprendiendo.. ame amo gracias, gracias adri Dios bendiga tu talento y tu profesionalismo eres extraordinaria gracias a la vida por colocarte en mi camino te bendigo gracias duermo feliz y enamorada 😍💙</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-md-3">
+                                    <img class="img-fluid rounded-circle" src="img/testimonios/vlatka-store.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 pt-4">
+                                    <h4>Nestor Velazco</h4>
+                                    <p>CEO Vlatka Store</p>
+                                    <p class="m-0">Me encanto tu trabajo, fue muy rápido y los resultado fue el que estaba buscando, me gusto tú atención, quede muy satisfecho 🙌🏻🙏 muy agradecido 🙌🏻🙏</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-md-3">
+                                    <img class="img-fluid rounded-circle" src="img/testimonios/abelardo-jaspe.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 pt-4">
+                                    <h4>Abg. Abelardo Jaspe</h4>
+                                    <p>@abg.abelardojaspe</p>
+                                    <p class="m-0">Trabajar con Adriana Porras fue una grata experiencia; en la que ponernos de acuerdo con respecto al concepto que me definiera como marca, se convirtió en un corto pero muy creativo debate que evidenció el alto nivel de profesionalismo y la gran pasión con la que Adriana asumió el reto de concebir, a partir de algunas respuestas y opiniones un tanto abstractas, una imagen que reflejara fielmente mi personalidad en relación al servicio que ofrezco en el área jurídica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-md-3">
+                                    <img class="img-fluid rounded-circle" src="img/testimonios/nancy.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 pt-4">
+                                    <h4>Nancy Fabian</h4>
+                                    <p>@nancysfabian</p>
+                                    <p class="m-0">Tuve una experiencia increíble con el servicio que la súper Adriana me brindó. Su experiencia y habilidad en el diseño fueron evidentes desde el inicio hasta los resultados finales, lo amé. Adriana se tomó el tiempo para trabajar perfectamente mis necesidades, incluso explicándome absolutamente todo de cada diseño y su uso. Recomiendo encarecidamente a Adriana para cualquiera que busque un servicio de diseño y atención de calidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-md-3">
+                                    <img class="img-fluid rounded-circle" src="img/testimonios/spotless.jpg" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 pt-4">
+                                    <h4>Spotless Vibes</h4>
+                                    <p>@spotlessvibescleaning</p>
+                                    <p class="m-0">Me comunique con Adriana para que diseñara el logo de mi empresa. Inicialmente llene unos formularios con algunas preguntas que ella me envió para comenzar el diseño. Realmente ella brinda un excelente servicio. Tiene una gran paciencia para aceptar si hay algún cambio y volverlo a rediseñar. Recomiendo ampliamente sus servicios es muy responsable, dedicada y creativa. Yo amé el resultado final de mi logo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-md-3">
                                     <img class="img-fluid rounded-circle" src="img/testimonios/1-nely.png" alt="">
                                 </div>
                                 <div class="col-lg-6 col-md-6 pt-4">
                                     <h4>Nelybert Rojas</h4>
                                     <p>@nelaroca</p>
+                                    <p class="m-0">Es perfecta, estamos muy felices con tu trabajo y sobre todo lo rápido y eficiente del servicio, a todos mis invitados les encantó, quedó bellísima y más aún impresa.</p>
                                 </div>
                             </div>
-                            <p class="m-0">Es perfecta, estamos muy felices con tu trabajo y sobre todo lo rápido y eficiente del servicio, a todos mis invitados les encanto, quedo bellísima y más aún impresa.</p>
                         </div>
                         <div class="position-relative">
                             <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4">
-                                    <img class="img-fluid rounded-circle" src="img/testimonios/2-cindy.png" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-8 pt-4">
-                                    <h4>Cindy Velandia</h4>
-                                    <p>@cyvd_17</p>
-                                </div>
-                            </div>
-                            <p class="m-0">Lo amé gracias, excelente trabajo.</p>
-                        </div>
-                        <div class="position-relative">
-                            <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-3 col-md-3">
                                     <img class="img-fluid rounded-circle" src="img/testimonios/3-advanced-focus.png" alt="">
                                 </div>
                                 <div class="col-lg-8 col-md-8 pt-4">
                                     <h4>Advanced Focus</h4>
                                     <p>@advancedfocus</p>
+                                    <p class="m-0">Me encantan, eres un sol, gracias, excelente trabajo.</p>
                                 </div>
-                            </div>
-                            <p class="m-0">Me encantan, eres un sol, gracias, excelente trabajo.</p>
+                            </div>                            
                         </div>
                         <div class="position-relative">
                             <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-3 col-md-3">
                                     <img class="img-fluid rounded-circle" src="img/testimonios/4-john.png" alt="">
                                 </div>
                                 <div class="col-lg-8 col-md-8 pt-4">
                                     <h4>John Otter</h4>
                                     <p>@j_mo_300</p>
+                                    <p class="m-0">Thank you so much, it was amazing! I was very satisfied!</p>
                                 </div>
                             </div>
-                            <p class="m-0">Thank you so much, it was amazing! I was very satisfied!</p>
                         </div>
-                        <!-- <div class="position-relative">
-                            <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4">
-                                    <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-8 pt-4">
-                                    <h4>Caren Rodríguez</h4>
-                                    <p>@carenrb</p>
-                                </div>
-                            </div>
-                            <p class="m-0">Muchísimas gracias, me encantó, quedo todo muy bien, gracias por la paciencia y comprensión Dios te siga bendiciendo.</p>
-                        </div> -->
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 pb-xl-5 wow animate__animated animate__slideInRight">

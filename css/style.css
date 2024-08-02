@@ -11,10 +11,17 @@ body{
     font-weight: 300;
     display: block;
 }
+.arizonia-regular {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 h2{
     font-size: 4em;
-    font-family: 'Josefin Sans', sans-serif;
-    font-style: italic;
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
     color: var(--main-azul-color);
     padding-bottom: 2%;
 }
@@ -22,7 +29,8 @@ h3{
     font-style: italic;
     font-size: 1.5em;
 }
-p{
+p, ol li{
+    color: var(--main-verde-color);
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.1em;
@@ -38,6 +46,9 @@ p{
     border-color: var(--main-verde-color);
     color: var(--main-blanco-color);
 }
+/* .owl-carousel .owl-item img {
+    width: 60% !important;
+} */
 /*inicio animacion menu*/
 .ul-principal a {
     color: var(--main-blanco-color);
@@ -246,7 +257,7 @@ div.enlace a:hover {
     font-style: italic;
 }
 .owl-carousel .owl-item img {
-    width: 80%;
+    width: 90%;
     display: block;
 }
 textarea {
@@ -260,10 +271,11 @@ textarea {
     padding-top: 8% !important;
 }
 .conoceme h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.2em;
-    color: var(--main-azul-color);
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
     font-style: normal;
+    font-size: 2.5em;
+    color: var(--main-azul-color);
 }
 .nav-tabs{
     border-bottom: var(--bs-nav-tabs-border-width) solid var(--main-verde-color);
@@ -285,10 +297,11 @@ textarea {
     padding-top: 8% !important;
 }
 .diseno-logos h1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3em;
-    color: var(--main-azul-color);
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
     font-style: normal;
+    font-size: 4em;
+    color: var(--main-azul-color);
     padding-bottom: 3%;
 }
 .accordion-button:not(.collapsed){
@@ -322,18 +335,23 @@ textarea {
     text-align: center;
 }
 .titulo-logo{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.3em;
     color: var(--main-azul-color);
+
+    /* font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 300; */
 }
 .titulo-logo-amita{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.4em;
     color: var(--main-azul-color);
-    font-style: normal;
-/*     font-weight: 300; */
+
 }
 .incluye{
     font-weight: 500;
@@ -376,6 +394,8 @@ textarea {
     text-align: center;
 }
 h2.titulo-plantillas{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     font-size: 2.5em;
     color: var(--main-verde-color);
 }
@@ -535,7 +555,7 @@ a.back-to-top:hover {
     .ul-principal a {
         font-size: 0.6em;
     }
-    #quien-soy img, #productos-digitales img, #plantillas img, .foto{
+    #quien-soy img, #productos-digitales img, #plantillas img, .foto {
         width: 70% !important;
     }
     .diseno-logos h3 {
@@ -597,7 +617,7 @@ a.back-to-top:hover {
         width: 19px;
     }
     h2.titulo-plantillas{
-        font-size: 1.6em;
+        font-size: 1.2em;
         color: var(--main-verde-color);
     }
     h3.titulo-plantillas{
@@ -615,7 +635,7 @@ a.back-to-top:hover {
         text-align: center;
     }
     .icono-pago{
-        width: 40% !important;
+        width: 30% !important;
     }
 
 }

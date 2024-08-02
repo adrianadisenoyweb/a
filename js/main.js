@@ -30,8 +30,8 @@
     $('.menu-servicios').click(function() {
       $('.items-plantillas').hide();
       $('.items-servicios').show();
-
     });
+
     //cerrar submenu plantillas
     $('.items-servicios a').click(function() {
         $('.items-servicios').hide(); 
@@ -63,13 +63,20 @@
     // }
 
 //Carrusel testimonios
-    $('.testimonial-carousel').owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 30,
-        dots: true,
-        loop: true,
-        items: 1
+    var owl = $('.testimonial-carousel');
+    var owlCarouselTimeout = 1000;
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        smartSpeed: 1000,
+        autoplayTimeout: owlCarouselTimeout,
+        autoplayHoverPause:true
+    });
+    owl.on('mouseleave',function(){
+        owl.trigger('stop.owl.autoplay'); //this is main line to fix it
+        owl.trigger('play.owl.autoplay', [owlCarouselTimeout]);
     });
 
 // Back to top button
@@ -171,23 +178,24 @@
         $('.valores').show();
         $('#valores').addClass('pagina-seleccionada');
     });
+    
     //Productos digitales
-    $(".carousel").swipe({
+    // $(".carousel").swipe({
 
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    //     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
       
-          if (direction == 'left') $(this).carousel('next');
-          if (direction == 'right') $(this).carousel('prev');
+    //       if (direction == 'left') $(this).carousel('next');
+    //       if (direction == 'right') $(this).carousel('prev');
       
-        },
-        allowPageScroll:"vertical"
+    //     },
+    //     allowPageScroll:"vertical",
       
-      });
+    // });
 
-    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 3000
-    });
+    // const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+    // const carousel = new bootstrap.Carousel(myCarouselElement, {
+    // interval: 3000
+    // });
 
     $('.como-utilizo').hide();
     $('.preg-frec').hide();
@@ -230,6 +238,23 @@
         $('#preg-frec').addClass('pagina-seleccionada');
     });
 
-
+    //social media
+    $('.diseno-plantillas').hide();
+    $('#diseno-posts').click(function(e) {
+        e.preventDefault();
+        $('.diseno-plantillas').hide();
+        $('#diseno-plantillas').removeClass('pagina-seleccionada');
+        
+        $('.diseno-posts').show();
+        $('#diseno-posts').addClass('pagina-seleccionada');
+    });
+    $('#diseno-plantillas').click(function(e) {
+        e.preventDefault();
+        $('.diseno-posts').hide();
+        $('#diseno-posts').removeClass('pagina-seleccionada');
+        
+        $('.diseno-plantillas').show();
+        $('#diseno-plantillas').addClass('pagina-seleccionada');
+    });
 
 })(jQuery);
