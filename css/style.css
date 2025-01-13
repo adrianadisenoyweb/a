@@ -29,6 +29,10 @@ h3{
     font-style: italic;
     font-size: 1.5em;
 }
+h5{
+    color: var(--main-azul-color);
+    font-size: 1.2em;
+}
 p, ol li{
     color: var(--main-verde-color);
     font-size: 1.2em;
