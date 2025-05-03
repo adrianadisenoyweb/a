@@ -8,7 +8,7 @@ body{
     color: var(--main-verde-color);
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     display: block;
 }
 .arizonia-regular {
@@ -36,7 +36,7 @@ h5{
 p, ol li{
     color: var(--main-verde-color);
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.1em;
 }
 .sobreescribir-fila{
@@ -90,6 +90,10 @@ p, ol li{
     border-image-slice: 1;
     width:100%;
 }
+.icono-logo{
+    width: 100px;
+    height: auto;
+}
 .blanco{
     color: #ffffff;
 }
@@ -126,7 +130,6 @@ p, ol li{
 #quien-soy h4{
     font-weight: bold;
     font-size: 4em;
-    font-family: 'amita', cursive;
     color: var(--main-azul-color);
 }
 #quien-soy h6{
@@ -327,6 +330,10 @@ textarea {
 }
 .fondo-rosa{
     background: rgba(239, 219, 212, 0.4);
+    border:0;
+}
+.card-title{
+    color:var(--main-verde-color); ;
 }
 .enlace h4{
     color: var(--main-azul-color);
@@ -355,6 +362,9 @@ textarea {
     font-style: normal;
     font-size: 1.4em;
     color: var(--main-azul-color);
+}
+.grosor{
+    font-weight: 400;
 
 }
 .incluye{
@@ -461,7 +471,7 @@ a.back-to-top:hover {
 }
 .enlace-ejemplo {
     color: var(--main-azul-color);
-    text-decoration: none;
+    /* text-decoration: none; */
     font-weight: 400;
     font-size: 1.1em;
 }
@@ -640,6 +650,9 @@ a.back-to-top:hover {
     }
     .icono-pago{
         width: 30% !important;
+    }
+    .separacion{
+        margin-top: 10px;
     }
 
 }
