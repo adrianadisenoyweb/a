@@ -117,8 +117,15 @@ p, ol li{
     font-size: 0.7em;
     font-weight: 400;
 }
+/************************BRILLARTE*********************/
+
+.inversion-curso{
+    color: var(--main-azul-color);
+    font-size: 1.5em;
+    font-weight: bold;
+}
 /**********************QUIEN SOY***********************/
-#quien-soy {
+#quien-soy, #brillarte {
     padding-top: 8% !important;
 }
 #quien-soy h3{
@@ -237,7 +244,7 @@ div.enlace a:hover {
     height: 125px;
     width: auto;
 }
-#productos-digitales, #portafolio, #contactame {
+#productos-digitales, #portafolio, #contactame, #esto-es-para-ti, #que-aprenderas, #bono, #final-precio{
     background: rgba(239, 219,212, 0.3);
 }
 /*********************PORTAFOLIO*********************/
@@ -490,7 +497,7 @@ a.back-to-top:hover {
 /************************* MEDIA QUERY ********************/
 
 @media(max-width: 1200px){
-    #quien-soy, .diseno-logos, .conoceme {
+    #quien-soy, .diseno-logos, .conoceme, #brillarte {
         padding-top: 10% !important;
     }
     h2{
@@ -521,7 +528,7 @@ a.back-to-top:hover {
     .sobreescribir-fila {
         display: inline;
     }
-    #quien-soy, .diseno-logos , .conoceme{
+    #quien-soy, .diseno-logos , .conoceme, #brillarte{
         padding-top: 11% !important;
     }
     h2{
@@ -551,8 +558,11 @@ a.back-to-top:hover {
     .sobreescribir-fila {
         display: inline;
     }
-    #quien-soy, .diseno-logos, .conoceme{
+    #quien-soy, .diseno-logos, .conoceme {
         padding-top: 12% !important;
+    }
+    #brillarte{
+        padding-top: 20% !important;
     }
     h2{
         font-size: 2.5em;
@@ -569,7 +579,7 @@ a.back-to-top:hover {
     .ul-principal a {
         font-size: 0.6em;
     }
-    #quien-soy img, #productos-digitales img, #plantillas img, .foto {
+    #quien-soy img, #productos-digitales img, #plantillas img, .foto, #brillarte img{
         width: 70% !important;
     }
     .diseno-logos h3 {
@@ -578,8 +588,11 @@ a.back-to-top:hover {
    
 }
 @media (max-width: 576px){
-    #quien-soy, .diseno-logos, .conoceme{
+    #quien-soy, .diseno-logos, .conoceme {
         padding-top: 20% !important;
+    }
+    #brillarte{
+        padding-top: 35% !important;
     }
     h2{
         font-size: 2.3em;
@@ -609,7 +622,7 @@ a.back-to-top:hover {
     .texto-testimonios{
         text-align: center;
     }
-    #quien-soy img, #productos-digitales img, #plantillas img{
+    #quien-soy img, #productos-digitales img, #plantillas img, #brillarte img {
         width: 70% !important;
     }
     #testimonios img.yo-testimonio {
