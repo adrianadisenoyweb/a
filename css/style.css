@@ -12,16 +12,18 @@ body{
     display: block;
 }
 .arizonia-regular {
-    font-family: "Arizonia", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
   }
   
 h2{
-    font-size: 4em;
-    font-family: "Arizonia", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 2.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
     color: var(--main-azul-color);
     padding-bottom: 2%;
 }
@@ -123,6 +125,9 @@ p, ol li{
     color: var(--main-azul-color);
     font-size: 1.5em;
     font-weight: bold;
+}
+#final-precio h3{
+    line-height:1.1;
 }
 /**********************QUIEN SOY***********************/
 #quien-soy, #brillarte {
@@ -285,7 +290,8 @@ textarea {
     padding-top: 8% !important;
 }
 .conoceme h2 {
-    font-family: "Arizonia", cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     font-size: 2.5em;
@@ -311,7 +317,8 @@ textarea {
     padding-top: 8% !important;
 }
 .diseno-logos h1{
-    font-family: "Arizonia", cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     font-size: 4em;
@@ -353,7 +360,8 @@ textarea {
     text-align: center;
 }
 .titulo-logo{
-    font-family: "Arizonia", cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
@@ -364,7 +372,8 @@ textarea {
     font-weight: 300; */
 }
 .titulo-logo-amita{
-    font-family: "Arizonia", cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     font-size: 1.4em;
@@ -501,7 +510,7 @@ a.back-to-top:hover {
         padding-top: 10% !important;
     }
     h2{
-        font-size: 3em;
+        font-size: 2em;
     }
     #quien-soy h3 {
         font-size: 1.4em;
@@ -530,9 +539,6 @@ a.back-to-top:hover {
     }
     #quien-soy, .diseno-logos , .conoceme, #brillarte{
         padding-top: 11% !important;
-    }
-    h2{
-        font-size: 2.5em;
     }
     #quien-soy h3 {
         font-size: 1.3em;
@@ -564,9 +570,6 @@ a.back-to-top:hover {
     #brillarte{
         padding-top: 20% !important;
     }
-    h2{
-        font-size: 2.5em;
-    }
     #quien-soy h3 {
         font-size: 1.3em;
     }
@@ -594,10 +597,7 @@ a.back-to-top:hover {
     #brillarte{
         padding-top: 35% !important;
     }
-    h2{
-        font-size: 2.3em;
-        text-align: center;
-    }
+
     #quien-soy h3 {
         font-size: 1.3em;
     }
