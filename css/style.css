@@ -619,6 +619,9 @@ a.back-to-top:hover {
    
 }
 @media (max-width: 576px){
+    .sobreescribir-fila{
+    display: inline !important;
+}
     #quien-soy, .diseno-logos, .conoceme {
         padding-top: 20% !important;
     }
