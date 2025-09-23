@@ -619,9 +619,7 @@ a.back-to-top:hover {
         font-size: 1.8em;
         line-height: 1.5em;
     }
-    .texto-testimonios{
-        text-align: center;
-    }
+
     #quien-soy img, #productos-digitales img, #plantillas img, #brillarte img {
         width: 70% !important;
     }
