@@ -589,6 +589,7 @@ a.back-to-top:hover {
     }
 }
 @media(max-width: 768px){
+
     .sobreescribir-fila {
         display: inline;
     }
@@ -619,16 +620,18 @@ a.back-to-top:hover {
    
 }
 @media (max-width: 576px){
+    .wow {
+        animation: none !important; /*desactiva la animación*/
+    }
     .sobreescribir-fila{
     display: inline !important;
-}
+    }
     #quien-soy, .diseno-logos, .conoceme {
         padding-top: 20% !important;
     }
     #brillarte{
         padding-top: 35% !important;
     }
-
     #quien-soy h3 {
         font-size: 1.3em;
     }
