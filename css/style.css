@@ -347,9 +347,9 @@ textarea {
 .diseno-logos h1{
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4em;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3em;
     color: var(--main-azul-color);
     padding-bottom: 3%;
 }
@@ -619,7 +619,8 @@ a.back-to-top:hover {
     }
    
 }
-@media (max-width: 576px){
+
+@media (max-width: 740px){
     .wow {
         animation: none !important; /*desactiva la animación*/
     }
@@ -627,7 +628,7 @@ a.back-to-top:hover {
     display: inline !important;
     }
     #quien-soy, .diseno-logos, .conoceme {
-        padding-top: 20% !important;
+        padding-top: 16% !important;
     }
     #brillarte{
         padding-top: 35% !important;
@@ -667,7 +668,94 @@ a.back-to-top:hover {
         font-size: 1.1em;
     }
     .diseno-logos h1 {
+        font-size: 1.8em;
+    }
+    .inversion{
+        text-align: right;
+    }
+    .brillo{
+        width: 19px;
+    }
+    h2.titulo-plantillas{
+        font-size: 1.2em;
+        color: var(--main-verde-color);
+    }
+    h3.titulo-plantillas{
+        font-size: 1.4em;
+        color: var(--main-verde-color);
+    }
+    .diseno-logos h3 {
+        font-size: 1.3em;
+    }
+    .fondo-footer p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .iconos-footer{
+        text-align: center;
+    }
+    .icono-pago{
+        width: 30% !important;
+    }
+    .separacion{
+        margin-top: 10px;
+    }
+
+}
+@media (max-width: 668px){
+    #quien-soy, .diseno-logos, .conoceme {
+        padding-top: 18% !important;
+    }
+}
+@media (max-width: 576px){
+    .wow {
+        animation: none !important; /*desactiva la animación*/
+    }
+    .sobreescribir-fila{
+    display: inline !important;
+    }
+    #quien-soy, .diseno-logos, .conoceme {
+        padding-top: 26% !important;
+    }
+    #brillarte{
+        padding-top: 35% !important;
+    }
+    #quien-soy h3 {
+        font-size: 1.3em;
+    }
+    p, #servicios p {
+        font-size: 1.1em;
+    }
+    #quien-soy h4 {
         font-size: 2em;
+    }
+    #quien-soy h6 {
+        font-size: 0.8em;
+    }
+    .owl-carousel .owl-item img {
+        width: 40%;
+        display: inline;
+    }
+    #testimonios h3 {
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
+
+    #quien-soy img, #productos-digitales img, #plantillas img, #brillarte img {
+        width: 70% !important;
+    }
+    #testimonios img.yo-testimonio {
+        display: none;
+    }
+    div.enlace a {
+        font-size: 1em;
+    }
+    #portafolio h6 {
+        font-size: 1.1em;
+    }
+    .diseno-logos h1 {
+        font-size: 1.8em;
     }
     .inversion{
         text-align: right;
