@@ -1,3 +1,6 @@
+/* *{
+    border: solid 1px red;
+} */
 :root {
   --main-verde-color: #007b88;
   --main-azul-color: #0d1a9d;
@@ -280,6 +283,24 @@ ol li{
     background-image: url(../img/derecha.svg);
 }
 /******************TUBRILLOVISUAL**********************/
+
+#brillovisual-1{
+    padding-top: 12% !important;
+    background-image: url('../img/brillovisual/inicio.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* This is key for responsiveness */
+    height: auto; /* Example height: 100% of the viewport height */
+    width: 100%;
+    color: white;
+    /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+}
+
+#brillovisual-1 h2, #brillovisual-1 h3{
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
 .bono-especial{
     font-size: 2.3em;
     padding-bottom: 0;
@@ -320,16 +341,18 @@ ul {
 }
 
 /**********************QUIEN SOY***********************/
-#quien-soy, #brillarte, #brillovisual-1 {
+#quien-soy, #brillarte {
     padding-top: 8% !important;
 }
-#quien-soy h3{
+#quien-soy h3, .conoceme h3{
     font-style: italic;
+    font-weight: bold;
     font-size: 1.5em;
     padding-top: 1%;
     padding-bottom: 2%;
 }
 #quien-soy h4{
+    font-family: "Noto Serif Display", serif;
     font-weight: bold;
     font-size: 4em;
     color: var(--main-azul-color);
@@ -420,10 +443,10 @@ div.enlace a:hover {
 }
 /******************SERVICIOS*************************/
 #servicios h3{
+    font-family: "Noto Serif Display", serif;
     font-style: normal;
     font-size: 1.7em;
     font-weight: 400;
-    text-transform: uppercase;
     padding-top: 10%;
     padding-bottom: 3%;
     color:  var(--main-azul-color);
@@ -464,11 +487,11 @@ div.enlace a:hover {
 }
 /******************TESTIMONIOS*********************/
 #testimonios h3{
-    font-style: normal;
-    font-size: 2.5em;
-    font-family: 'Josefin Sans', sans-serif;
-    color: var(--main-azul-color);
+    font-family: "Noto Serif Display", serif;
     font-style: italic;
+    font-size: 2.5em;
+    color: var(--main-azul-color);
+    
 }
 .owl-carousel .owl-item img {
     width: 90%;
@@ -485,10 +508,9 @@ textarea {
     padding-top: 8% !important;
 }
 .conoceme h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     font-size: 2.5em;
     color: var(--main-azul-color);
 }
@@ -500,7 +522,7 @@ textarea {
     border-top: var(--bs-nav-tabs-border-width) solid var(--main-verde-color);
     border-top-left-radius: var(--bs-nav-tabs-border-radius);
     border-top-right-radius: var(--bs-nav-tabs-border-radius);
-    font-weight: 400;
+    font-weight: 600;
 }
 .nav-link:hover {
     cursor: pointer;
@@ -512,8 +534,7 @@ textarea {
     padding-top: 8% !important;
 }
 .diseno-logos h1{
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
     font-weight: 700;
     font-style: italic;
     font-size: 3em;
@@ -525,10 +546,10 @@ textarea {
     color: var(--main-blanco-color);
 }
 .accordion-button {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 0.9em;
     color: var(--main-blanco-color);
     font-style: italic;
+    font-weight: 600;
     background: var(--main-verde-color);
 }
 .accordion-button.collapsed::after, .accordion-button.collapsed::before {
@@ -542,11 +563,16 @@ textarea {
     border:0;
 }
 .card-title{
-    color:var(--main-verde-color); ;
+    color:var(--main-verde-color); 
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.3em;
 }
 .enlace h4{
     color: var(--main-azul-color);
     font-size: 1.5em;
+    font-style: italic;
+    font-weight: 600;
 }
 .disenemos-juntas{
     color: var(--main-verde-color);
@@ -555,31 +581,25 @@ textarea {
     text-align: center;
 }
 .titulo-logo{
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
     color: var(--main-azul-color);
-
-    /* font-family: 'Josefin Sans', sans-serif;
-    font-style: normal;
-    font-weight: 300; */
 }
 .titulo-logo-amita{
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
+    fonfont-family: 'Noto Serif Display', serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.4em;
     color: var(--main-azul-color);
 }
 .grosor{
-    font-weight: 400;
-
-}
-.incluye{
     font-weight: 500;
+}
+.incluye {
+    font-weight: 600;
+    font-style: italic;
 }
 .icono-caracol ul{
     color: var(--main-verde-color);
@@ -587,9 +607,11 @@ textarea {
 }
 .icono-caracol ul li, .icono-caracol ul p{
     font-size: 1.1em;
+    line-height: 1.1em;
 }
 .usd{
     font-size: 0.7em;
+    font-weight: 600;
 }
 .obsequio{
     font-weight: 400;
@@ -619,19 +641,23 @@ textarea {
     text-align: center;
 }
 h2.titulo-plantillas{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
     font-weight: bold;
     font-size: 2.5em;
     color: var(--main-verde-color);
 }
 h3.titulo-plantillas{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 600;
     font-size: 2em;
     color: var(--main-verde-color);
 }
 .enlaces-canva a{
     color: var(--main-verde-color);
     font-size: 1.2em !important;
-    font-weight: 400;   
+    font-weight: 600;   
     text-decoration: none;
 }
 #contactame img {
@@ -682,9 +708,16 @@ a.back-to-top:hover {
 }
 .enlace-ejemplo {
     color: var(--main-azul-color);
-    /* text-decoration: none; */
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.1em;
+    font-style: italic;
+}
+
+/************************* REDES SOCIALES *********************/
+.diseno-posts h3{
+    font-weight: 600;
+    font-style: italic;
+
 }
 
 /************************* PAGINACION *********************/
@@ -701,7 +734,7 @@ a.back-to-top:hover {
 /************************* MEDIA QUERY ********************/
 
 @media(max-width: 1200px){
-    #quien-soy, .diseno-logos, .conoceme, #brillarte, #brillovisual-1{
+    #quien-soy, .diseno-logos, .conoceme, #brillarte{
         padding-top: 10% !important;
     }
     h2{
@@ -874,14 +907,36 @@ a.back-to-top:hover {
         padding-top: 18% !important;
     }
 }
+
 @media (max-width: 576px){
+    h2{
+        font-size: 1.9em;
+    }
+    #brillovisual-1 h2{
+        font-size: 1.7em;
+    }
+    
+    #brillovisual-1 h3{
+        font-size: 0.9em;
+    }
+
+    .bono-especial {
+        font-size: 2em;
+    }
+    #brillovisual-1 p, #brillovisual-2 p, #brillovisual-3 p, #brillovisual-4 p, #brillovisual-5 p, #brillovisual-6 p, #brillovisual-7 p, #brillovisual-8 p, #brillovisual-9 p, #brillovisual-10 p,   
+    #brillovisual-2 li, #brillovisual-3 li, #brillovisual-4 li, #brillovisual-5 li, #brillovisual-6 li, #brillovisual-7 li, #brillovisual-8 li, #brillovisual-9 li, #brillovisual-10 li
+    {
+        font-size: 0.9em;
+        line-height: 1.1em;
+    }
+
     .wow {
         animation: none !important; /*desactiva la animación*/
     }
-    .sobreescribir-fila{
+    /* .sobreescribir-fila{
     display: inline !important;
-    }
-    #quien-soy, .diseno-logos, .conoceme {
+    } */
+    #quien-soy, .diseno-logos, .conoceme, #brillovisual-1{
         padding-top: 26% !important;
     }
     #brillarte{
@@ -904,6 +959,7 @@ a.back-to-top:hover {
         display: inline;
     }
     #testimonios h3 {
+        
         text-align: center;
         font-size: 1.8em;
         line-height: 1.5em;
@@ -916,7 +972,7 @@ a.back-to-top:hover {
         display: none;
     }
     div.enlace a {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     #portafolio h6 {
         font-size: 1.1em;
