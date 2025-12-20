@@ -4,38 +4,160 @@
   --main-rosa-color: #efdbd4;
   --main-blanco-color: white;
 }
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 body{
     color: var(--main-verde-color);
     font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     display: block;
 }
 .arizonia-regular {
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 700;
     font-style: italic;
-  }
-  
+}
+.noto-serif-display-regular-h3 {
+    font-size: 1.3em;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.noto-serif-display-regular{
+font-family: "Noto Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}  
+
 h2{
     font-size: 2.5em;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 700;
     font-style: italic;
     color: var(--main-azul-color);
     padding-bottom: 2%;
 }
 h3{
-    font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.1;
 }
 h5{
     color: var(--main-azul-color);
     font-size: 1.2em;
 }
-p, ol li{
+p{
+    color: var(--main-verde-color);
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+ol li{
     color: var(--main-verde-color);
     font-size: 1.2em;
     font-weight: 400;
@@ -157,8 +279,48 @@ p, ol li{
 .carousel-control-next-icon {
     background-image: url(../img/derecha.svg);
 }
+/******************TUBRILLOVISUAL**********************/
+.bono-especial{
+    font-size: 2.3em;
+    padding-bottom: 0;
+}
+/* Estilo base para todas las listas */
+ul {
+  list-style-type: none; /* Quita viñetas por defecto */
+  padding-left: 20px; /* Espacio para el icono */
+}
+
+.anidada ul > li::before {
+  content: url('../img/servicios/icono-brillo.png'); /* O un emoji, o una URL de imagen */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Icono para el segundo nivel (ul ul > li) */
+.anidada ul ul > li::before {
+  content: "•"; /* Otra forma, o tu icono */
+  color: var(--main-azul-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.noto-serif-display-regular-nombre {
+    font-size: 1.6em;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#brillovisual-10 li, #brillovisual-10 p{
+    line-height: 1.1em;
+    font-size: 0.9em;
+}
+
 /**********************QUIEN SOY***********************/
-#quien-soy, #brillarte {
+#quien-soy, #brillarte, #brillovisual-1 {
     padding-top: 8% !important;
 }
 #quien-soy h3{
@@ -180,7 +342,12 @@ div.enlace {
     display: block;
     text-align: right;
 }
+div .centrado{
+    display: block;
+    text-align: center;
+}
 div.enlace a {
+    font-family: "Noto Serif Display", serif;
     color: var(--main-blanco-color);
     background-color: var(--main-azul-color);
     padding: 10px;
@@ -277,7 +444,7 @@ div.enlace a:hover {
     height: 125px;
     width: auto;
 }
-#productos-digitales, #portafolio, #contactame, #esto-es-para-ti, #que-aprenderas, #bono, #final-precio{
+#productos-digitales, #portafolio, #contactame, #esto-es-para-ti, #que-aprenderas, #bono, #final-precio, #brillovisual-2, #brillovisual-4, #brillovisual-6, #brillovisual-8, #brillovisual-10{
     background: rgba(239, 219,212, 0.3);
 }
 /*********************PORTAFOLIO*********************/
@@ -416,7 +583,7 @@ textarea {
 }
 .icono-caracol ul{
     color: var(--main-verde-color);
-    list-style-image: url('../img/servicios/icono-caracol.png') !important;
+    list-style-image: url('../img/servicios/icono-brillo.png') !important;
 }
 .icono-caracol ul li, .icono-caracol ul p{
     font-size: 1.1em;
@@ -534,7 +701,7 @@ a.back-to-top:hover {
 /************************* MEDIA QUERY ********************/
 
 @media(max-width: 1200px){
-    #quien-soy, .diseno-logos, .conoceme, #brillarte {
+    #quien-soy, .diseno-logos, .conoceme, #brillarte, #brillovisual-1{
         padding-top: 10% !important;
     }
     h2{
