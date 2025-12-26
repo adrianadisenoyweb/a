@@ -369,6 +369,10 @@ div .centrado{
     display: block;
     text-align: center;
 }
+div .izquierda{
+    display: block;
+    text-align: left;
+}
 div.enlace a {
     font-family: "Noto Serif Display", serif;
     color: var(--main-blanco-color);
@@ -900,6 +904,9 @@ a.back-to-top:hover {
     .separacion{
         margin-top: 10px;
     }
+     .cajaregalo{
+        width: 50% !important;
+    }
 
 }
 @media (max-width: 668px){
@@ -922,6 +929,9 @@ a.back-to-top:hover {
 
     .bono-especial {
         font-size: 2em;
+    }
+    .cajaregalo{
+        width: 75% !important;
     }
     #brillovisual-1 p, #brillovisual-2 p, #brillovisual-3 p, #brillovisual-4 p, #brillovisual-5 p, #brillovisual-6 p, #brillovisual-7 p, #brillovisual-8 p, #brillovisual-9 p, #brillovisual-10 p,   
     #brillovisual-2 li, #brillovisual-3 li, #brillovisual-4 li, #brillovisual-5 li, #brillovisual-6 li, #brillovisual-7 li, #brillovisual-8 li, #brillovisual-9 li, #brillovisual-10 li
@@ -1009,6 +1019,14 @@ a.back-to-top:hover {
     }
     .separacion{
         margin-top: 10px;
+    }
+}
+@media (max-width: 400px){
+    #brillovisual-1 h2 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.7em;
     }
 
 }
